@@ -1,3 +1,17 @@
+'''
+
+This solution uses recursion to traverse the tree and check if there is a path from the root to a leaf 
+such that the sum of the values along the path equals targetSum. 
+It does this by first checking if the current node is a leaf node. 
+If it is, it checks if the targetSum is equal to the value of the current node. 
+If the current node is not a leaf, it recursively checks the left and right children 
+of the current node with a modified targetSum that is targetSum - root.val. 
+This ensures that the sum is correctly computed along the path as the function traverses the tree.
+
+'''
+
+
+
 class TreeNode:
   def __init__(self, val, left=None, right=None):
     self.val = val
