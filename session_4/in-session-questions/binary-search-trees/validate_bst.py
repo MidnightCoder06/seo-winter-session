@@ -7,7 +7,7 @@
 class Solution:
    
     def validateBstHelper(self, currNode, minValue, maxValue):
-
+        # base case
         # if we've reached a leaf node and haven't returned false
         # then we can see this path at least is valid so return true to our parent when we pop back up
         if currNode is None:
@@ -32,6 +32,8 @@ class Solution:
 
         # both the left and right subtree must be valid
         return leftIsValid and rightIsValid
+        # return true and true -> true
+        # return true and false -> false 
 
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         return self.validateBstHelper(root, float("-inf"), float("inf"))

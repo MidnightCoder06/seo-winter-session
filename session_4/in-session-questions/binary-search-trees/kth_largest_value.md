@@ -18,7 +18,7 @@ A node is said to be a valid BST node if and only if it satisfies the BST proper
 
 
 
-''' Visual
+''' 
 
 Sample Input:
 
@@ -41,8 +41,9 @@ Sample Output:
 
 ''' Algorithm
 
-Perform inorder traversal and store all of the node values in the order in which they were visited.
-Since in-order traversal of a BST visits the nodes in ascending order,
+1. Perform inorder traversal 
+2. store all of the node values in the order in which they were visited.
+3. Since in-order traversal of a BST visits the nodes in ascending order,
 the kth value from the end of the traversal order will be the kth largest value.
 
 '''
